@@ -9,11 +9,13 @@ int GetNum()
     return argument;
 }
 
+
 int PositiveNumbers()
 {
     int posNum = new Random().Next(100, 1000);
     return posNum;
 };
+
 
 int[] GenerateArray(int arg1)
 {
@@ -44,6 +46,7 @@ void EvenNumbers(int [] argArray)
     System.Console.WriteLine();
     System.Console.WriteLine($"Четных чисел в массиве: {sum}");
 }
+
 
 EvenNumbers(GenerateArray(GetNum()));
 

@@ -3,6 +3,7 @@
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
+
 int GetLen()
 {
     System.Console.WriteLine("Введите длину массива:");
@@ -10,11 +11,13 @@ int GetLen()
     return argument;
 }
 
+
 int GenerateNumbers()
 {
     int posNum = new Random().Next(-1000, 1000);
     return posNum;
 }
+
 
 int[] GenerateArray(int arg1)
 {
@@ -28,6 +31,7 @@ int[] GenerateArray(int arg1)
   }
   return genArray;
 }  
+
 
 void EvenNumbers(int [] argArray)
 {
@@ -44,6 +48,7 @@ void EvenNumbers(int [] argArray)
     System.Console.WriteLine();
     System.Console.WriteLine($"Сумма элементов на нечетных позициях: {sum}");
 }
+
 
 EvenNumbers(GenerateArray(GetLen()));
 
